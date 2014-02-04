@@ -1,0 +1,12 @@
+#+title Backup
+#+author Daan van Berkel
+#+email dvanberkel@m-industries.com
+
+* Autosave
+
+I do not like the autosave functionality. Work loss is an indication
+that you should commit more often.
+
+#+begin_src emacs-lisp
+(setq auto-save-default nil)
+#+end_src
