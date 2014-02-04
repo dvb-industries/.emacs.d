@@ -1,0 +1,11 @@
+#+title Hooks
+#+author Daan van Berkel
+#+email dvanberkel@m-industries.com
+
+* Before Save
+
+Trailing whitespaces, who needs them? I most certainly do not.
+
+#+begin_src emacs-lisp
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
+#+end_src
