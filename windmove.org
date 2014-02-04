@@ -1,0 +1,10 @@
+#+title Windmove
+#+author Daan van Berkel
+#+email dvanberkel@m-industries.com
+
+Windmove allows to navigate windows with =shift-left=, =shift-right=,
+=shift-up= and =shift-down=.
+
+#+begin_src emacs-lisp
+(windmove-default-keybindings)
+#+end_src
