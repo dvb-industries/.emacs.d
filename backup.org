@@ -10,3 +10,19 @@ that you should commit more often.
 #+begin_src emacs-lisp
 (setq auto-save-default nil)
 #+end_src
+
+* Backup
+
+We are going to experiment with backing up files. If I never visit the
+backup directory we will changes it to never make back ups.
+
+#+begin_src emacs-lisp
+(setq
+   backup-by-copying t
+   backup-directory-alist
+      '(("." . "~/.emacs.d/.backup"))
+   delete-old-versions t
+   kept-new-versions 6
+   kept-old-versions 2
+   version-control t)
+#+end_src
