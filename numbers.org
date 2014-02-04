@@ -16,3 +16,12 @@ And let them always show up
 #+begin_src emacs-lisp
 (global-linum-mode t)
 #+end_src
+
+* column numbers
+
+Per default the modeline does not show the column where the point is
+located. The following command rectifies that.
+
+#+begin_src emacs-lisp
+(column-number-mode t)
+#+end_src
