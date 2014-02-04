@@ -1,0 +1,18 @@
+#+title IDO
+#+author Daan van Berkel
+#+email dvanberkel@m-industries.com
+
+IDO stands for interactive do things and is a marvelous utility. It
+can greatly enhance the usability various other tools.
+
+So lets require it
+
+#+begin_src emacs-lisp
+(require 'ido)
+#+end_src
+
+and enable it
+
+#+begin_src emacs-lisp
+(ido-mode t)
+#+end_src
