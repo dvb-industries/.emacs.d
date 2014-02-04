@@ -1,0 +1,18 @@
+#+title Numbers
+#+author Daan van Berkel
+#+email dvanberkel@m-industries.com
+
+I like numbers to show up in my editor.
+
+* lin number
+For the line numbers we use the excellent =linum= library.
+
+#+begin_src emacs-lisp
+(require 'linum)
+#+end_src
+
+And let them always show up
+
+#+begin_src emacs-lisp
+(global-linum-mode t)
+#+end_src
