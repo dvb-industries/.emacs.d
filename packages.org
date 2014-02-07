@@ -1,0 +1,62 @@
+#+title Packages
+#+author Daan van Berkel
+#+email dvanberkel@m-industries.com
+
+Emacs 24 comes with a great [[http://ergoemacs.org/emacs/emacs_package_system.html][package manager]] that allows the easy
+installation of packages.
+
+* Require
+We require the package in order to start using it.
+
+#+begin_src emacs-lisp
+(require 'package)
+#+end_src
+
+* Archives
+There are various package archives that maintain lists of
+software. Here we list the ones we want to use.
+
+#+begin_src emacs-lisp
+(add-to-list 'package-archives
+  '("marmalade" . "http://marmalade-repo.org/packages/"))
+#+end_src
+
+* Initialize
+=package= needs to be initialized as well
+
+#+begin_src emacs-lisp
+(package-initialize)
+#+end_src
+
+* Content
+The contents need to be refreshed
+
+#+begin_src emacs-lisp
+(package-refresh-contents)
+#+end_src
+
+* Packages to install
+** Variable
+We create a variable to contain all the packages we want to have
+installed.
+
+#+begin_src emacs-lisp
+(defvar packages-to-install '())
+#+end_src
+
+** Wanted packages
+Next we list all the packages we need.
+
+#+begin_src emacs-lisp
+(add-to-list 'packages-to-install 'clojure-mode)
+(add-to-list 'packages-to-install 'nrepl)
+#+end_src
+
+** Installation
+At last we install all packages that aren't already installed.
+
+#+begin_src emacs-lisp
+(dolist (p packages-to-install)
+  (when (not (package-installed-p p))
+    (package-install p)))
+#+end_src emacs-lisp
