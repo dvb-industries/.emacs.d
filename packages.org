@@ -49,7 +49,7 @@ Next we list all the packages we need.
 
 #+begin_src emacs-lisp
 (add-to-list 'packages-to-install 'clojure-mode)
-(add-to-list 'packages-to-install 'nrepl)
+(add-to-list 'packages-to-install 'cider)
 #+end_src
 
 ** Installation
