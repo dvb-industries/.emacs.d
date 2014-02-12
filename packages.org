@@ -52,6 +52,7 @@ Next we list all the packages we need.
 (add-to-list 'packages-to-install 'cider)
 (add-to-list 'packages-to-install 'paredit)
 (add-to-list 'packages-to-install 'auto-complete)
+(add-to-list 'packages-to-install 'editorconfig)
 #+end_src
 
 ** Installation
