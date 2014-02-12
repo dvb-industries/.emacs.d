@@ -1,0 +1,17 @@
+#+title auto-complete
+#+author Daan van Berkel
+#+email dvanberkel@m-industries.com
+
+Autocompletion is a very cool feature that transform Emacs more and
+more into a fully fledged integrated developement environment.
+
+* Installation
+We have installed autocomplete with the package manager. Take a look
+at [[https://github.com/dvb-industries/.emacs.d/blob/master/packages.org][packages.org]].
+
+* Configuration
+
+#+begin_src emacs-lisp
+(require 'auto-complete-config)
+(ac-config-default)
+#+end_src
