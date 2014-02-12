@@ -50,6 +50,7 @@ Next we list all the packages we need.
 #+begin_src emacs-lisp
 (add-to-list 'packages-to-install 'clojure-mode)
 (add-to-list 'packages-to-install 'cider)
+(add-to-list 'packages-to-install 'paredit)
 #+end_src
 
 ** Installation
