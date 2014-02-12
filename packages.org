@@ -61,3 +61,14 @@ At last we install all packages that aren't already installed.
   (when (not (package-installed-p p))
     (package-install p)))
 #+end_src emacs-lisp
+
+** Configuration
+
+Some packages need configuration. We will load all files in the
+=package-configuration= directory.
+
+#+begin_src emacs-lisp
+(setq config-dir (file-name-directory
+		  (concat dotfiles-dir "package-configuration/")))
+(mapc #'org-babel-load-file (directory-files config-dir t "\\.org$"))
+#+end_src
