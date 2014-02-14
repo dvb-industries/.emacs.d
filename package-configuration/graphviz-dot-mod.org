@@ -1,0 +1,11 @@
+#+title graphviz-dot-mode
+#+author Daan van Berkel
+#+email dvanberkel@m-industries.com
+
+The custom extension for =dot= files has changed from =.dot= to
+=.gv=. The =graphviz-dot-mode= does not seem to pick it up so we
+explicitly add the association.
+
+#+begin_src emacs-lisp
+(add-to-list 'auto-mode-alist '("\\.gv\\'" . graphviz-dot-mode))
+#+end_src
