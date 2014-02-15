@@ -15,3 +15,11 @@ at [[https://github.com/dvb-industries/.emacs.d/blob/master/packages.org][packag
 (require 'auto-complete-config)
 (ac-config-default)
 #+end_src
+
+In order to make it work seamlessly with =yasnippet= it seems that it
+is necessary to set the variable =ac-source-yasnippet= to =nil= as
+seen in this [[http://stackoverflow.com/questions/15774807/emacs-24-autocomplete-yasnippet][stackoverflow question]].
+
+#+begin_src emacs-lisp
+(setq ac-source-yasnippet nil)
+#+end_src
