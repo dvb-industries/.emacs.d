@@ -1,0 +1,24 @@
+#+title Org-Mode
+#+author Daan van Berkel
+#+email dvanberkel@m-industries.com
+
+[[http://orgmode.org][Org Mode]] is a marvellous mode indeed. It can do a number of wonderful things.
+
+
+* Code evaluation
+
+One of the interesting capabillities to evaluate code in
+blocks. [[http://orgmode.org/manual/Working-With-Source-Code.html][Documentation]] about this feature tells how to configure the
+languages that are can be used for evaluation.
+
+#+begin_src emacs-lisp
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '((emacs-lisp . t)
+   (js . t)
+   (perl . t)
+   (python . t)
+   (ruby . t)
+   (sh . t)
+  ))
+#+end_src
