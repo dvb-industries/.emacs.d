@@ -16,11 +16,14 @@ We want to connect to freenode upon entering =C-c e f=
 #+begin_src emacs-lisp
 (global-set-key "\C-cef" (lambda () (interactive)
 			   (erc :server "irc.freenode.net" :port "6667"
+				:nick irc-nick :password irc-password)
+			   (erc :server "irc.oftc.net" :port "6667"
 				:nick irc-nick :password irc-password)))
 #+end_src
 
 We want to automatically join the following list of channels
 
 #+begin_src emacs-lisp
-(setq erc-autojoin-channels-alist '(("freenode.net" "#moenenspace" "#m-industries")))
+(setq erc-autojoin-channels-alist '(("freenode.net" "#moenenspace" "#m-industries")
+				    ("oftc.net" "#flood.nl")))
 #+end_src
