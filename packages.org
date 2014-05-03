@@ -61,6 +61,7 @@ Next we list all the packages we need.
 (add-to-list 'packages-to-install 'auto-complete)
 (add-to-list 'packages-to-install 'graphviz-dot-mode)
 (add-to-list 'packages-to-install 'yasnippet)
+(add-to-list 'packages-to-install 'elixir-mode)
 ;; (add-to-list 'packages-to-install 'editorconfig) ;; there are problems with version 0.2
 #+end_src
 
