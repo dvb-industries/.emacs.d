@@ -16,9 +16,16 @@ We require the package in order to start using it.
 There are various package archives that maintain lists of
 software. Here we list the ones we want to use.
 
+We are interested in =marmalade=
 #+begin_src emacs-lisp
 (add-to-list 'package-archives
   '("marmalade" . "http://marmalade-repo.org/packages/"))
+#+end_src
+
+and also in =melpa=
+#+begin_src emacs-lisp
+(add-to-list 'package-archives
+  '("melpa" . "http://melpa.milkbox.net/packages/"))
 #+end_src
 
 * Initialize
