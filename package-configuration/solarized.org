@@ -1,0 +1,9 @@
+#+title solarized
+#+author Daan van Berkel
+#+email dvanberkel@m-industries.com
+
+We want a nice color theme matching so we picked solarized.
+
+#+begin_src emacs-lisp
+(load-theme 'solarized-dark t)
+#+end_src
