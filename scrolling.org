@@ -1,0 +1,15 @@
+#+title Scrolling
+#+author Daan van Berkel
+#+email dvanberkel@m-industries.com
+
+Although you can get used to it a little bit unnerving to see the
+cursor jump.
+
+We found a nice [[http://zhangda.wordpress.com/2009/05/21/customize-emacs-automatic-scrolling-and-stop-the-cursor-from-jumping-around-as-i-move-it/][blog post]] that counters this.
+
+#+begin_src emacs-lisp
+(setq scroll-margin 1
+      scroll-conservatively 0
+      scroll-up-aggressively 0.01
+      scroll-down-aggressively 0.01)
+#+end_src
