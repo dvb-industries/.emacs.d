@@ -65,6 +65,7 @@ Next we list all the packages we need.
 (add-to-list 'packages-to-install 'color-theme-solarized)
 (add-to-list 'packages-to-install 'haskell-mode)
 (add-to-list 'packages-to-install 'go-mode)
+(add-to-list 'packages-to-install 'markdown-mode)
 ;; (add-to-list 'packages-to-install 'editorconfig) ;; there are problems with version 0.2
 #+end_src
 
