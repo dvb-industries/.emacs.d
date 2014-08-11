@@ -22,3 +22,10 @@ languages that are can be used for evaluation.
    (sh . t)
   ))
 #+end_src
+* Syntax Highlighting
+The variable =org-src-fontify-natively= has to be set to highlight
+exported source blocks.
+
+#+begin_src emacs-lisp
+(setq org-src-fontify-natively t)
+#+end_src
