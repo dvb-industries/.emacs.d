@@ -1,0 +1,10 @@
+#+title ibuffer
+#+author Daan van Berkel
+#+email dvanberkel@m-industries.com
+
+Since emacs 22 there is a new command called =ibuffer=. It is a real
+good alternative for =list-buffers=.
+
+#+begin_src emacs-lisp
+(defalias 'list-buffers 'ibuffer)
+#+end_src
