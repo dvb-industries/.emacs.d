@@ -1,0 +1,11 @@
+#+title editorconfig
+#+author Daan van Berkel
+
+The [[http://editorconfig.org/][editorconfig]] project allows different editors to uniformly work
+with source files.
+
+We already installed the package and we need to load it
+
+#+begin_src emacs-lisps
+(load "editorconfig")
+#+end_src
