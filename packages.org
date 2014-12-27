@@ -103,8 +103,8 @@ This library works around this problem by copying important
 environment variables from the user's shell.
 
 #+begin_src emacs-lisp
-  (if (eq system-type 'darwin)
-      (add-to-list 'my-packages 'exec-path-from-shell))
+    (if (eq system-type 'darwin)
+        (add-to-list 'packages-to-install 'auto-complete))
 #+end_src
 ** Installation
 At last we install all packages that aren't already installed.
