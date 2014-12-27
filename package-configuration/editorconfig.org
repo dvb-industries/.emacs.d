@@ -6,6 +6,6 @@ with source files.
 
 We already installed the package and we need to load it
 
-#+begin_src emacs-lisps
+#+begin_src emacs-lisp
 (load "editorconfig")
 #+end_src
