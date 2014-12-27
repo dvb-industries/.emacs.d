@@ -43,10 +43,11 @@ and also in =melpa=
 #+end_src
 
 * Content
-The contents need to be refreshed
+Next we are going to install the ELPA archive description if needed.
 
 #+begin_src emacs-lisp
-(package-refresh-contents)
+  (when (not package-archive-contents)
+      (package-refresh-contents))
 #+end_src
 
 * Packages to install
