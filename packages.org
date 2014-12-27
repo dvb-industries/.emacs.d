@@ -63,9 +63,6 @@ installed.
 Next we list all the packages we need.
 
 #+begin_src emacs-lisp
-(add-to-list 'packages-to-install 'clojure-mode)
-(add-to-list 'packages-to-install 'cider)
-(add-to-list 'packages-to-install 'paredit)
 (add-to-list 'packages-to-install 'auto-complete)
 (add-to-list 'packages-to-install 'graphviz-dot-mode)
 (add-to-list 'packages-to-install 'yasnippet)
@@ -77,6 +74,22 @@ Next we list all the packages we need.
 (add-to-list 'packages-to-install 'solarized-theme)
 (add-to-list 'packages-to-install 'editorconfig)
 (add-to-list 'packages-to-install 'elm-mode)
+#+end_src
+
+*** Clojure
+
+We are following the tutorial [[http://www.braveclojure.com/][Clojure for the Brave and True]]. It has a
+few suggestions for a great packages that we copied.
+
+#+begin_src emacs-list
+(add-to-list 'packages-to-install 'paredit)
+(add-to-list 'packages-to-install 'clojure-mode)
+(add-to-list 'packages-to-install 'cider)
+(add-to-list 'packages-to-install 'smex)
+(add-to-list 'packages-to-install 'projectile)
+(add-to-list 'packages-to-install 'rainbow-delimiters)
+(add-to-list 'packages-to-install 'tagedit)
+(add-to-list 'packages-to-install 'magit)
 #+end_src
 
 ** Installation
