@@ -92,6 +92,20 @@ few suggestions for a great packages that we copied.
 (add-to-list 'packages-to-install 'magit)
 #+end_src
 
+** OS Specifics
+
+On OS X, an Emacs instance started from the graphical user
+interface will have a different environment than a shell in a
+terminal window, because OS X does not run a shell during the
+login. Obviously this will lead to unexpected results when
+calling external utilities like make from Emacs.
+This library works around this problem by copying important
+environment variables from the user's shell.
+
+#+begin_src emacs-lisp
+  (if (eq system-type 'darwin)
+      (add-to-list 'my-packages 'exec-path-from-shell))
+#+end_src
 ** Installation
 At last we install all packages that aren't already installed.
 
