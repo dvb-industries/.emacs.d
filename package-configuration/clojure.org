@@ -21,7 +21,10 @@ of Java classes (e.g. JavaClassName)
 A little more syntax highlighting
 
 #+begin_src emacs-lisp
-(require 'clojure-mode-extra-font-locking)
+  ;; The following problem occurs when enabling this option
+  ;; File error: Cannot open load file, no such file or directory, clojure-mode-extra-font-locking
+
+  ;;(require 'clojure-mode-extra-font-locking)
 #+end_src
 
 syntax hilighting for midje
